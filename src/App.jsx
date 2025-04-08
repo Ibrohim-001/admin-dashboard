@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { ThemeProvider } from "./components/theme-provider";
 import Users from "./pages/users";
+import Models from "./pages/models";
 
 const isAuthenticated = () => true;
 
@@ -42,7 +43,7 @@ export default function Page() {
           <Route path="/users" element={<PrivateRoute element={<Users />} />} />
           <Route
             path="/models"
-            element={<PrivateRoute element={<h1>Models</h1>} />}
+            element={<PrivateRoute element={<Models/>} />}
           />
           {/* 404 Page  */}
           <Route path="*" element={<h1>404</h1>} />
