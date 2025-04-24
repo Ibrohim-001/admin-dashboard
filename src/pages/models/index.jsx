@@ -2,6 +2,9 @@ import React from "react";
 
 import { Bar, BarChart, CartesianGrid } from "recharts"
 
+
+
+
 import {  ChartContainer } from "@/components/ui/chart"
 const chartConfig = {
   desktop: {
